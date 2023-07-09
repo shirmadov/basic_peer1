@@ -78,7 +78,7 @@ async function call() {
     const configuration = {};
     console.log('RTCPeerConnection configuration:', configuration);
     pc1 = new RTCPeerConnection(configuration);
-    console.log('Created local peer connection object pc1');
+    console.log('Created local peer connection object pc1',pc1);
     pc1.addEventListener('icecandidate', e => onIceCandidate(pc1, e));
     pc2 = new RTCPeerConnection(configuration);
     console.log('Created remote peer connection object pc2');
